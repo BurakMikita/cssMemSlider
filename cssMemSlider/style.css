@@ -97,6 +97,8 @@ body {
 }
 .label__item {
 	display: inline-block;
+	padding: 7px;
+	padding-top: 0;
 	margin:auto;
 
 }
@@ -111,7 +113,13 @@ body {
 
 label:hover {
 	cursor: pointer;
+	
 }
+
+.label__item:hover .span{
+	background: #F0E68C;
+}
+
 span:hover {
 	background: #F0E68C;
 }

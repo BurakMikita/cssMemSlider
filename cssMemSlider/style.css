@@ -6,7 +6,7 @@ body {
 }
 .wrapper {
 	display: flex;
-	margin: 1% auto;
+	margin: 3% auto;
 	width: 70%;
 	height: 100%;
 	justify-content: center;
@@ -32,7 +32,7 @@ body {
 	
 	width:90%;
 	height: 100%;
-	margin: 5% auto 0 auto;
+	margin: 3% auto 0 auto;
 	overflow: hidden;
 }
 .container__item {
@@ -43,7 +43,7 @@ body {
 .container__item img {
 	width: 100%;
 	height: 70vh;
-	border-radius: 2%;
+	border-radius: 3%;
 
 }
 .slider__footer {
@@ -72,19 +72,19 @@ body {
 	font-size:1.3em;
 	transition: 1s;
 }
-#slider1:checked ~ .container .meme1,
+#slider1:checked ~ .container .sliders,
 #slider1:checked ~ .slider__footer .footer__text .footer__allText .item1 {
 	margin-left: 0%;
 }
-#slider2:checked ~ .container .meme1,
+#slider2:checked ~ .container .sliders,
 #slider2:checked ~ .slider__footer .footer__text .footer__allText .item1{
 	margin-left: -25%;
 }
-#slider3:checked ~ .container .meme1,
+#slider3:checked ~ .container .sliders,
 #slider3:checked ~ .slider__footer .footer__text .footer__allText .item1 {
 	margin-left: -50%;
 }
-#slider4:checked ~ .container .meme1,
+#slider4:checked ~ .container .sliders,
 #slider4:checked ~ .slider__footer .footer__text .footer__allText .item1 {
 	margin-left: -75%;
 }
@@ -92,7 +92,7 @@ body {
 
 .buttons__label {
 	display: flex;
-	width: 15%;
+	width: 25%;
 	
 }
 .label__item {
@@ -155,5 +155,17 @@ span:hover {
 		}
 		.label__item {
 			margin: 3%;
+		}
+		.container__item img {
+			width: 100%;
+			height: 50vh;
+			border-radius: 3%;
+		
+		}
+		.buttons__label {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			
 		}
 }

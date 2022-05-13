@@ -119,6 +119,9 @@ label:hover {
 .label__item:hover .span{
 	background: #F0E68C;
 }
+.label__item:active .span{
+	background: green;
+}
 
 span:hover {
 	background: #F0E68C;

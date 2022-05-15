@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #DCDCDC;
+
+}
+.wrapper {
+	display: flex;
+	margin: 3% auto;
+	width: 70%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	border: 0.4em solid #F5F5DC;
+	background-color: #F0FFFF;
+	border-radius: 3%;
+}
+
+
+.slider input {
+	display: none;
+}
+
+
+.container {
+	display: flex;
+	width: 400%;
+	height:100%;
+}
+
+.slider {
+	
+	width:90%;
+	height: 100%;
+	margin: 3% auto 0 auto;
+	overflow: hidden;
+}
+.container__item {
+	
+	width: 25%;
+	transition: 1s;
+}
+.container__item img {
+	width: 100%;
+	height: 70vh;
+	border-radius: 3%;
+
+}
+.slider__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top:3%;
+	margin-bottom: 3%;
+	width:100%;
+	
+}
+
+
+.footer__text {
+	width: 60%;
+	overflow: hidden;
+}
+.footer__allText {
+	display: flex;
+	
+	width:400%;
+	height: 100%;
+}
+.item {
+	font-weight: bolder;
+	width:25%;
+	font-size:1.3em;
+	transition: 1s;
+}
+#slider1:checked ~ .container .sliders,
+#slider1:checked ~ .slider__footer .footer__text .footer__allText .item1 {
+	margin-left: 0%;
+}
+#slider2:checked ~ .container .sliders,
+#slider2:checked ~ .slider__footer .footer__text .footer__allText .item1{
+	margin-left: -25%;
+}
+#slider3:checked ~ .container .sliders,
+#slider3:checked ~ .slider__footer .footer__text .footer__allText .item1 {
+	margin-left: -50%;
+}
+#slider4:checked ~ .container .sliders,
+#slider4:checked ~ .slider__footer .footer__text .footer__allText .item1 {
+	margin-left: -75%;
+}
+
+
+.buttons__label {
+	display: flex;
+	width: 25%;
+	
+}
+.label__item {
+	display: inline-block;
+	padding: 7px;
+	padding-top: 0;
+	margin:auto;
+
+}
+.label__item span {
+	display: block;
+	border:0.2em solid black;
+	width:1.6vh;
+	height: 1.6vh;
+	border-radius: 50%;
+
+}
+
+label:hover {
+	cursor: pointer;
+	
+}
+
+.label__item:hover .span{
+	background: #F0E68C;
+}
+.label__item:active .span{
+	background: green;
+}
+
+span:hover {
+	background: #F0E68C;
+}
+
+#slider1:checked ~ .slider__footer .buttons__label .label__item:nth-child(1) span,
+#slider2:checked ~ .slider__footer .buttons__label .label__item:nth-child(2) span,
+#slider3:checked ~ .slider__footer .buttons__label .label__item:nth-child(3) span,
+#slider4:checked ~ .slider__footer .buttons__label .label__item:nth-child(4) span
+{
+	background:#808080
+	
+}
+
+
+@media (max-width:768px) {
+       .slider__footer {
+			 display: flex;
+			 flex-direction: column;
+			 align-items: center;
+			 justify-content: center;
+			
+		 }
+		 .footer__text {
+			 order: 3;
+			 margin: 3%;
+		 }
+		 .footer__text {
+			width: 90%;
+			overflow: hidden;
+		}
+		.label__item {
+			margin: 3%;
+		}
+		.container__item img {
+			width: 100%;
+			height: 50vh;
+			border-radius: 3%;
+		
+		}
+		.buttons__label {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			
+		}
+}
